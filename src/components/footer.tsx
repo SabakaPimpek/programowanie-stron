@@ -3,10 +3,10 @@
 export default function Footer() {
   const footerNavs = [
     {
-      label: "Resources",
+      label: "Różne",
       items: [
         {
-          href: "javascript:void()",
+          href: "/contact",
           name: "Kontakt",
         },
       ],
@@ -112,7 +112,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 py-10 border-t border-gray-700 items-center justify-between sm:flex">
           <p className="text-gray-300">
-            © 2025 Jakub Kulesa. To jest strona poglądowa.
+            2025 Jakub Kulesa. To jest strona poglądowa.
           </p>
           <div className="flex items-center gap-x-6 text-gray-400 mt-6">
             <a href="javascript:void()">

@@ -12,7 +12,7 @@ export default function PrimarySection() {
           </p>
           <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
             <a
-              href="javascript:void(0)"
+              href="/oferta"
               className="px-7 py-3 w-full bg-white text-gray-800 text-center rounded-md shadow-md block sm:w-auto"
             >
               Poznaj ofertę

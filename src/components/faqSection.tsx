@@ -32,7 +32,7 @@ export default function FAQSection() {
         <div className="text-center mt-12 text-lg font-light">
           Nie możesz znaleźć odpowiedzi?
           <a
-            href="/support"
+            href="/contact"
             className="hover:text-blue-700 ml-2 text-violet-600 font-light"
           >
             Skontaktuj się z nami

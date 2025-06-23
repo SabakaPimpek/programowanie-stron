@@ -28,7 +28,7 @@ const SponsorsSection = () => {
     <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-          Zostaliśmy zweryfikowani przez:
+          Wspierają nas:
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
           {sponsorLogos.map((logo) => (
