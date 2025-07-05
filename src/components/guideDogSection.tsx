@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 
 type dogsType = {
   name: string,
@@ -34,7 +35,7 @@ const dogs: dogsType[] = [
 
 const GuideDogsSection = () => {
   return (
-    <section className="bg-gray-50 py-16" id='dogSection'>
+    <section className="bg-gray-50 py-16" id='dogSSSection'>
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-12">
           Poznaj naszych psów przewodników
@@ -45,11 +46,14 @@ const GuideDogsSection = () => {
               key={index}
               className="bg-white rounded-xl shadow-md overflow-hidden transition hover:shadow-lg"
             >
-              <img
-                src={dog.image}
-                alt={`Pies przewodnik ${dog.name}`}
-                className="w-full h-64 object-cover"
-              />
+              <div className="relative w-full h-64">
+                <Image
+                  src={dog.image}
+                  alt={`Pies przewodnik ${dog.name}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800">{dog.name}</h3>
                 <p className="text-sm text-gray-600 mb-2">

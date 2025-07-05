@@ -1,8 +1,10 @@
+import Image from 'next/image'
+
 export default function PrimarySection() {
-  return(
-    <section className="pt-24 pb-12 px-4 items-center lg:flex md:px-8 bg-gray-50 w-full justify-center">
-        <div className="flex justify-center amax-w-screen-xl items-center">
-          <div className="space-y-4 flex-1 sm:text-center lg:text-left">
+  return (
+    <section className="pt-24 pb-12 px-4 items-center lg:flex md:px-8 bg-gray-50 w-full justify-center min-h-screen">
+      <div className="flex justify-center max-w-screen-xl items-center w-full">
+        <div className="space-y-4 flex-1 sm:text-center lg:text-left">
           <h1 className="text-black font-bold text-4xl xl:text-5xl">
             Pies przewodnik
             <span className="text-bold"> w niskich cenach</span>
@@ -25,13 +27,19 @@ export default function PrimarySection() {
             </a>
           </div>
         </div>
-        <div className="flex-1 text-center mt-7 lg:mt-0 lg:ml-3">
-          <img
-            src="dog-mainpage-transparent.png"
-            className="w-full mx-auto sm:w-10/12  lg:w-full"
-          />
+
+        <div className="flex-1 text-center mt-10 lg:mt-0 lg:ml-6">
+          <div className="relative w-full h-96 sm:h-[28rem] lg:h-[32rem] mx-auto">
+            <Image
+              src="/dog-mainpage-transparent.png"
+              alt="Pies przewodnik"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
-        </div>
-      </section>
-  )
+      </div>
+    </section>
+  );
 }

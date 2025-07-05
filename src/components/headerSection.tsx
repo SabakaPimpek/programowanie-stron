@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useState } from "react"
+import Image from 'next/image';
+import Link from 'next/link'
 
 type HeaderProps = {
   sticky?: boolean
@@ -31,21 +33,21 @@ export default function Header(props: HeaderProps) {
       } ${isScrolled ? "" : "py-3"}`}
     >
       <nav className="items-center px-3 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
-        <a href="/" className="flex items-center space-x-2">
-          <img
-            src="logo.png"
-            width={isScrolled ? 50 : 80} // zmniejsz logo
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/logo.png"
+            width={isScrolled ? 50 : 80}
             height={isScrolled ? 20 : 50}
             alt="Float UI logo"
           />
           <span className={`font-semibold text-lg transition-all duration-300 ${isScrolled ? "text-base" : "text-xl"}`}>
             Jakub Kulesa
           </span>
-        </a>
+        </Link>
         <ul className="py-4 flex-1 items-center flex space-x-3 sm:space-x-6 sm:justify-end">
           {navigation.map((item, idx) => (
             <li className="text--200" key={idx}>
-              <a href={item.path}>{item.title}</a>
+              <Link href={item.path}>{item.title}</Link>
             </li>
           ))}
           <li>
