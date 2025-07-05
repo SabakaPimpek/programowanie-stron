@@ -17,7 +17,7 @@ export default function Header(props: HeaderProps) {
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  })
 
   const navigation = [
     { title: "Nasi podopieczni", path: "/#dogSection" },
