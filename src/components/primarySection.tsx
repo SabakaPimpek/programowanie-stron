@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import mainpageImage from "../../public/dog-mainpage-transparent.png"
 
 export default function PrimarySection() {
   return (
@@ -31,7 +32,7 @@ export default function PrimarySection() {
         <div className="flex-1 text-center mt-10 lg:mt-0 lg:ml-6">
           <div className="relative w-full h-96 sm:h-[28rem] lg:h-[32rem] mx-auto">
             <Image
-              src="/dog-mainpage-transparent.png"
+              src={mainpageImage}
               alt="Pies przewodnik"
               fill
               className="object-contain"

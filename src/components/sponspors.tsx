@@ -1,26 +1,30 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import logo1 from '../../public/images/logos/logo1.svg'
+import logo2 from '../../public/images/logos/logo2.svg'
+import logo3 from '../../public/images/logos/logo3.svg'
+import logo4 from '../../public/images/logos/logo4.svg'
 
 const sponsorLogos = [
   {
     name: 'Sponsor 1',
-    src: '/images/logos/logo1.svg',
+    src: logo1,
     alt: 'Logo Sponsor 1',
   },
   {
     name: 'Sponsor 2',
-    src: '/images/logos/logo2.svg',
+    src: logo2,
     alt: 'Logo Sponsor 2',
   },
   {
     name: 'Sponsor 3',
-    src: '/images/logos/logo3.svg',
+    src: logo3,
     alt: 'Logo Sponsor 3',
   },
   {
     name: 'Sponsor 4',
-    src: '/images/logos/logo4.svg',
+    src: logo4,
     alt: 'Logo Sponsor 4',
   },
 ];
