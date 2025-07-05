@@ -1,8 +1,8 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image'
 import MaxImage from '../../public/images/dogs/max.jpeg';
-import LunaImage from '../../public/images/dogs/luna.jpeg';
-import RicoImage from '../../public/images/dogs/rico.jpeg';
+import LunaImage from '../../public/images/dogs/luna.jpg';
+import RicoImage from '../../public/images/dogs/rico.png';
 
 type dogsType = {
   name: string,
