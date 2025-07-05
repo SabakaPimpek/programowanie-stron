@@ -51,7 +51,7 @@ export default function PricingSection() {
               className="relative flex-1 flex flex-col p-8 rounded-xl border-2 bg-white shadow-sm"
             >
               <div>
-                <span className="text-indigo-600 font-medium">{item.name}</span>
+                <span className="text-sky-600 font-medium">{item.name}</span>
                 <div className="mt-4 text-gray-800 text-3xl font-semibold">
                   {item.price}zł{" "}
                   <span className="text-xl text-gray-600 font-normal">
@@ -64,7 +64,7 @@ export default function PricingSection() {
                   <li key={idx} className="flex items-center gap-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-indigo-600"
+                      className="h-5 w-5 text-sky-600"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -79,7 +79,7 @@ export default function PricingSection() {
                 ))}
               </ul>
               <div className="flex-1 flex items-end">
-                <button className="px-4 py-3 cursor-pointer rounded-lg w-full font-semibold text-sm duration-150 text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700">
+                <button className="px-4 py-3 cursor-pointer rounded-lg w-full font-semibold text-sm duration-150 text-white bg-sky-600 hover:bg-sky-500 active:bg-sky-700">
                   Zamów szkolenie
                 </button>
               </div>

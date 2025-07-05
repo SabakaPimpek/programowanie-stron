@@ -1,6 +1,14 @@
 import React from 'react';
 
-const dogs = [
+type dogsType = {
+  name: string,
+  age: string,
+  breed: string,
+  description: string,
+  image: string
+}
+
+const dogs: dogsType[] = [
   {
     name: 'Max',
     age: '4 lata',
