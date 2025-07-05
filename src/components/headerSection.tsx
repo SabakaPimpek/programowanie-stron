@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import Image from 'next/image';
 import Link from 'next/link'
+import LogoImg from '../../public/logo.png'
 
 type HeaderProps = {
   sticky?: boolean
@@ -35,7 +36,7 @@ export default function Header(props: HeaderProps) {
       <nav className="items-center px-3 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/logo.png"
+            src={LogoImg}
             width={isScrolled ? 50 : 80}
             height={isScrolled ? 20 : 50}
             alt="Float UI logo"

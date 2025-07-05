@@ -1,12 +1,15 @@
 import React from 'react';
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
+import MaxImage from '../../public/images/dogs/max.jpeg';
+import LunaImage from '../../public/images/dogs/luna.jpeg';
+import RicoImage from '../../public/images/dogs/rico.jpeg';
 
 type dogsType = {
   name: string,
   age: string,
   breed: string,
   description: string,
-  image: string
+  image: StaticImageData
 }
 
 const dogs: dogsType[] = [
@@ -15,21 +18,21 @@ const dogs: dogsType[] = [
     age: '4 lata',
     breed: 'Labrador Retriever',
     description: 'Doświadczony pies przewodnik, bardzo opanowany i cierpliwy.',
-    image: '/images/dogs/max.jpeg',
+    image: MaxImage,
   },
   {
     name: 'Luna',
     age: '3 lata',
     breed: 'Golden Retriever',
     description: 'Energiczna i uważna, świetnie sprawdza się w miejskim środowisku.',
-    image: '/images/dogs/luna.jpg',
+    image: LunaImage,
   },
   {
     name: 'Rico',
     age: '5 lat',
     breed: 'Owczarek niemiecki',
     description: 'Spokojny i oddany, idealny dla osoby o spokojnym trybie życia.',
-    image: '/images/dogs/rico.png',
+    image: RicoImage,
   },
 ];
 
